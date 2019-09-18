@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jogo de Dados</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="init();">
+    <canvas id="canvas" width="400" height="300"> </canvas>
+    <input type="button" value="Lançamento" onclick="init()" />
+    <form name="f">
+      Stage: <input type="text" name="stage" id="stage" /> Point:
+      <input type="text" name="point" id="point" /> outcome:
+      <input type="text" name="outcome" id="outcome" />
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>
