@@ -7,13 +7,20 @@
     <title>Jogo de Dados</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body onload="init();">
+  <body onload="iniciarJogo()">
     <canvas id="canvas" width="400" height="300"> </canvas>
-    <input type="button" value="Lançamento" onclick="init()" />
-    <form name="f">
-      Stage: <input type="text" name="stage" id="stage" /> Point:
-      <input type="text" name="point" id="point" /> outcome:
-      <input type="text" name="outcome" id="outcome" />
+    <div><input type="button" value="Lançamento" class="button" onclick="throwTwice()" /> 
+      <input type="button" value="Novo Jogo" class="button" onclick="emptyDice()"></div>
+    <form name="f" id="form">
+      Jogadores: </br> </br> </br> 
+      Nome: <span id="player1"> </span>  &nbsp; &nbsp;
+      Pontos do dado:  <span id="point1"></span>
+    </br></br></br>
+      Nome: <span id="player2"></span> &nbsp; &nbsp;
+      Pontos do dado:  <span id="point2"></span>
+    </br></br></br>
+      Resultado: </br> </br> </br> 
+      <span id="result"></span>
     </form>
 
     <script src="main.js"></script>

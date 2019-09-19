@@ -1,3 +1,20 @@
-button {
-  border-radius: 5px;
+body {
+  margin-left: 300px;
+}
+
+.button {
+  margin: 50px -30px 50px 100px;
+  padding: 10px 10px 10px 10px;
+  font-size: 16px;  
+}
+
+#player1, #player2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#form {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
 }
