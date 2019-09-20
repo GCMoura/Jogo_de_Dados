@@ -29,15 +29,24 @@ function init() {
   drawface(ch); //função para escrever a jogada do dado
 }
 
-function resultado(x, y) {
-
-    console.log(x,y)  
-  
+function resultado(soma, lance) {
+  let resultadoFinal = [];
+  let pl1 = '';
+  let pl2 = '';
+  if (lance % 2 == 1){
+    pl1 = soma
+    ponto1.innerHTML = soma;
+  } else if (lance % 2 == 0) {
+    ponto2.innerHTML = soma;
+    pl2 = soma
+  }
+  resultadoFinal.push(pl1)
+  resultadoFinal.push(pl2)
+  console.log(resultadoFinal)
+ 
 }
 
 function throwTwice() { //lançamento dos dois dados
-  let pl1 = '';
-  let pl2 = '';
   var ch = 1 + Math.floor(Math.random() * 6); //define o valor de da face do dado entre 1 e 6
   dx =  dicex;
   dy = dicey;
@@ -49,15 +58,7 @@ function throwTwice() { //lançamento dos dois dados
   lance += 1;
   console.log('Lance nº: ', lance)
   soma += ch;
-  if (lance % 2 == 1){
-    pl1 = soma;
-    ponto1.innerHTML = soma;  
-  } else if (lance % 2 == 0) {
-    ponto2.innerHTML = soma;
-    pl2 = soma;
-    resultado(pl1, pl2)
-  }
-  
+  resultado(soma, lance);
 }
 
 function emptyDice() { //Inicia o jogo com o dado vazio
@@ -69,7 +70,8 @@ function emptyDice() { //Inicia o jogo com o dado vazio
   newDx = dx - 180
   ctx.clearRect(newDx, dy, dicewidth, diceheight); // limpa a face do dado depois da primeira jogada
   ctx.strokeRect(newDx, dy, dicewidth, diceheight); // contorno da face do dado
-  pontos.innerHTML = ""; //zera os pontos
+  ponto1.innerHTML = ""; //zera os pontos
+  ponto2.innerHTML = "";
 }
 
 function drawface(n) {
