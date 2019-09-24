@@ -7,11 +7,26 @@
     <title>Jogo de Dados</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+<<<<<<< HEAD
+  <body>
+=======
   <body >
+>>>>>>> df9be95b28dc7a6a1313fa7beec555fc1152c61c
     <canvas id="canvas" width="400" height="300"> </canvas>
-    <div><input type="button" value="Lançamento" class="button" onclick="throwTwice()" /> 
-      <input type="button" value="Novo Jogo" class="button" onclick="emptyDice()"></div>
     <form name="f" id="form">
+<<<<<<< HEAD
+      <input type="button" value="Jogadores" class="button" onclick="emptyDice()"> </br> </br> 
+      Nome: <span id="player1"> </span>  &nbsp; &nbsp;
+      Pontos do dado:  <span id="point1"></span>  &nbsp; &nbsp;
+      <input type="button" value="Lançamento" class="button" onclick ="throwTwice1()" /> 
+    </br></br>
+      Nome: <span id="player2"></span> &nbsp; &nbsp;
+      Pontos do dado:  <span id="point2"></span> &nbsp; &nbsp;
+      <input type="button" value="Lançamento" class="button" onclick="throwTwice2()" />
+    </br></br>
+      Resultado: </br> </br> 
+      </form>
+=======
       Jogadores: </br> </br> 
       Nome: <span id="player1"> </span>  &nbsp; &nbsp;
       Pontos do dado:  <span id="point1"></span>
@@ -20,8 +35,16 @@
       Pontos do dado:  <span id="point2"></span>
     </br></br>
       Resultado: </br> </br> 
+>>>>>>> df9be95b28dc7a6a1313fa7beec555fc1152c61c
       <span id="result"></span>
-    </form>
+      <span id="emoji"></span>
+
+    <div>
+        <audio id="sound1" src="./sounds/clay.mp3"></audio>
+        <audio id="sound2" src="./sounds/bubbles.mp3"></audio>
+    </div>
+
+    
 
     <script src="main.js"></script>
   </body>
