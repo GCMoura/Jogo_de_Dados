@@ -1,48 +1,42 @@
 body {
-    margin-left: 300px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+
+#telaResultado {
+  padding-left: 250px;;
+  background: linear-gradient(to right, lightgray, darkgray);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  display: grid;
+  grid-template-rows: 10% 10% 10%;
+}
+
+#telaJogo {
+    margin: 0;
+    padding-left: 200px;
+    background-color: lightgray;
 }
 
 .button {
-<<<<<<< HEAD
     margin: 5px -30px 30px 100px;
     padding: 5px 5px 5px 5px;
     font-size: 16px;
-=======
-  margin: 5px -30px 30px 100px;
-  padding: 5px 5px 5px 5px;
-  font-size: 16px;
->>>>>>> df9be95b28dc7a6a1313fa7beec555fc1152c61c
 }
 
 #player1,
-#player2 {
-<<<<<<< HEAD
+#player2,
+#form {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     font-size: 20px;
     font-weight: bold;
 }
 
-#form {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-=======
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 20px;
-  font-weight: bold;
+#emoji {
+  font-size: 60px;
 }
 
-#form {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
->>>>>>> df9be95b28dc7a6a1313fa7beec555fc1152c61c
-}
 
-#result {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-}
 
-#divEmoji {
-    width: 500px;
-}
